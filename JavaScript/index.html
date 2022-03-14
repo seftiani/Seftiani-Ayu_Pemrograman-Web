@@ -1,0 +1,92 @@
+<html>
+<head>
+    <title>Anaconda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+           
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Ransel</a></li>
+                    <li><a href="#">Tote bag</a></li>
+                    <li><a href="#">Sling Bag</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="informasi">
+            <div class="overlay"></div>
+            <img src="img/foto1.jpg" class="lance">
+            <div id="circle">
+                <div class="feature one">
+                    
+                    <div>
+                        <h1>About Us</h1>
+                        <p>Kami menyediakan beberapa jenis tas</p>
+                        <p>Owner: Seftiani Ayu lestari</p>
+                    </div>
+                </div>
+                <div class="feature two">
+                    
+                    <div>
+                        <h1>Ransel</h1>
+                        <p>Tas ransel dengan kualitas terbaik</p>
+                        <p>Bisa digunakan bertahun-tahun, kuat dan tebal</p>
+                        <p>Pilihan warna tas yang beragam</p>
+                    </div>
+                </div>
+                <div class="feature three">
+                   
+                    <div>
+                        <h1>Tote Bag</h1>
+                        <p>Tersedia dengan berbagai warna dan kualitas terbaik dari toko kami</p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    
+                    <div>
+                        <h1>Sling Bag</h1>
+                        <p>Cocok bagi kalian yang tidak suka membawa banyak barang</p>
+                        <p>Cukup untuk menyimpan dompet dan handphone</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <img src="img/arrow.png" id="up">
+            <h3>INFO</h3>
+            <img src="img/arrow.png" id="down">
+        </div>
+    
+    </div>
+
+    <script>
+        var circle = document.getElementById("circle");
+        var up = document.getElementById("up");
+        var down = document.getElementById("down");
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        up.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+        down.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+    </script>
+
+</body>
+</html>

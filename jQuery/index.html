@@ -1,0 +1,84 @@
+<!doctype html>
+<html class="no-js" lang="pt-br"> 
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Anaconda</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+
+	<style>
+		body { overflow-x: hidden; overflow-y: hidden; }
+		p { width: 500px; }
+		.scrollv { overflow-y: auto; }
+	</style>
+
+	<noscript>
+		<style>
+			body { overflow-x: auto; overflow-y: auto; }
+		</style>
+	</noscript>
+</head>
+
+<body>
+
+	<div id="teste">
+
+		<div id="stage" class="stage">
+			<h1>BIODATA DIRI</h1>
+			<img src="img/foto1.jpg" style="width: 30%;">
+			<p>NAMA : Seftiani Ayu Lestari</p>
+			<p>NIM : 20050974054</p>
+			<p>KELAS : S1 Pendidikan Teknologi Informasi 2020 B</p>
+			<p>PRODI : S1 Pendidikan Teknologi Informasi</p>
+			<a href="#stage2">Next</a>
+		</div>
+
+		<div id="stage2" class="stage scrollv">
+			<h1>BIOGRAFI</h1>
+			<h2>About Me</h2>
+
+			<a href="#stage3">Next</a>
+
+			<p>Halo Guys</p>
+			<p>Namaku Seftiani Ayu Lestari. Umur 20 tahun asal dari Nganjuk. Sekarang ini aku berkuliah di Universitas Negeri Surabaya. Menjadi mahasiswa dari Jurusan Teknik Informatika. Sekarang ini aku berada di semester 4.</p>
+			<p>Menjadi mahasiswa Jurusan Teknik Informatika mungkin menjadi hal yang keren menurut banyak orang. TI pun saat ini sudah terkenal diberbagai penjuru dunia.</p>
+
+		</div>
+
+		<div id="stage3" class="stage">
+			<h1>HOBI</h1>
+			<p>Nah... Kebetulan hobiku ini membaca dan menulis</p>
+			<p>Menulis adalah kegiatan yang mudah ya... Namun sebagian orang memang malas untuk menulis. Padahal dengan menulis kita bisa mencurahkan isi kepala kita. </p>
+		
+			<a href="#stage4">Next</a>
+		</div>
+
+		<div id="stage4" class="stage">
+			<h1>PESAN</h1>
+			<p>kamu itu hebat. Kamu adalah tokoh utama dalam hidupmu. Kamu adalah kamu, bukan orang lain. _SeftianiAyu </p>
+
+			<a href="#stage">Back Biodata Diri</a>
+		</div>
+
+	</div>
+
+	<script src="js/libs/jquery-1.12.4.min.js"></script>
+	<script src="js/libs/jquery.scrollTo.min.js"></script>
+	<script src="js/libs/jquery.easing.min.js"></script>
+	<script src="js/jquery.fullContent.js"></script>
+	<script>
+
+		$('#teste').fullContent({
+			children: 'div',
+			mapPosition: [{v: 1, h: 1}, {v: 1, h: 2}, {v: 2, h: 1}, {v: 2, h: 2}],
+			stageStart: 1,
+			idComplement: 'page_',
+			ease: 'easeOutQuad'
+		});
+
+	</script>
+	</body>
+</html>
